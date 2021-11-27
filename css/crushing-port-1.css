@@ -139,10 +139,12 @@ header .half-width nav ul li a {
 	padding-left: 100px;
 }
 
-#image.main-image {
+.main-image {
 	background-image: url(../img/hero-background.png);
+	background-position: center;
+	background-repeat: no-repeat;
 	background-size: cover;
-	margin: 0;
+	height: 50%;
 }
 
 /* my work portfolio */
