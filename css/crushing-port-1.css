@@ -23,7 +23,7 @@
 	--fs-body: 1rem;
 }
 
-@media (min-width: 800px) {
+@media screen and (min-width: 600px) {
 	:root {
 		--fs-h1: 4.5rem;
 		--fs-h2: 3.75rem;
@@ -236,7 +236,7 @@ header {
 
 .wrapper {
 	display: grid;
-	grid-template-columns: no-repeat(2, 1fr);
+	grid-template-columns: repeat(2, 1fr);
 	grid-gap: 10px;
 	margin: 100px;
 	padding: 100px;
@@ -353,6 +353,14 @@ header {
 	margin: 100px;
 }
 
+/* @media (min-width: 511px) {
+	.services {
+		display: flex;
+		max-width: 1000px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+} */
 
 .about-me {
 	background-image: url(../img/about-me.png);
@@ -443,13 +451,14 @@ header {
 .footer-container .column .social-media i {
 	color: #ff0094;
 }
+
 .copyright p {
 	padding-bottom: 25px;
 }
 
 /* media query starts */
 
-@media screen and (min-width: 300px), (max-width: 766px) {
+@media (min-width: 576px) {
 	header {
 		padding: 1em;
 	}
@@ -546,18 +555,5 @@ header {
 	}
 }
 
-
-
-@media  (min-width: 768px), (max-width: 1200px){
-	.nav-toggle {
-		padding: 1.5em;
-		background: transparent;
-		border: 0;
-		cursor: pointer;
-		position: absolute;
-		right: 2em;
-		z-index: 1000;
-	}
-
-
+@media (min-width: 768px), (max-width: 1200px) {
 }
