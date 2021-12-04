@@ -457,10 +457,11 @@ header {
 /* media query start */
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media screen and (min-width: 300px) and (max-width: 480px) {
 	html {
 		margin: 0px;
 		padding: 0px;
+		width: 100%;
 	}
 
 	header {
@@ -496,8 +497,7 @@ header {
 	.grid {
 		margin: 0px;
 		padding: 0px;
-		width: 170%;
-		
+		width: 75%;
 	}
 
 	.box1 img {
@@ -524,8 +524,7 @@ header {
 	.box3 .feature__subtitle--heading-three {
 		font-size: 2rem;
 		align-self: left;
-  		justify-content: left;
-		margin: 9;
+		justify-content: left;
 	}
 
 	.box3 .feature__subtitle--heading-four {
@@ -622,10 +621,11 @@ header {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 601px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
 	html {
 		margin: 0px;
 		padding: 0px;
+		width: 100%;
 	}
 
 	header {
@@ -639,15 +639,11 @@ header {
 	}
 
 	.nav-toggle {
-		padding: 1em;
-		cursor: pointer;
-		right: -17.3em;
-		margin-right: 268px;
+		display: none;
 	}
 
 	.section__title--heading {
 		padding: 65px;
-		/* margin: -5px; */
 		font-size: 4rem;
 	}
 
