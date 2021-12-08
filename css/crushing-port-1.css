@@ -464,8 +464,10 @@ header {
 	}
 	header,
 	main {
-		/* width: 100%; */
+		width: 100%;
 		background-color: yellow;
+		overflow-x: hidden !important;
+	}
 		
 	}
 
@@ -559,7 +561,9 @@ header {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media screen and (min-width: 401px) and (max-width: 767px) {
 	body {
-		background-color: pink;
+		background-color: #14eaae;
+		width: 100%;
+		overflow-x: hidden !important;
 	}
 }
 
