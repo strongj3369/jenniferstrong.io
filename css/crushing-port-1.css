@@ -465,7 +465,7 @@ header {
 	header,
 	main {
 		width: 100%;
-		background-color: yellow;
+		background-color: green;
 		overflow-x: hidden !important;
 	}
 		
@@ -561,7 +561,7 @@ header {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media screen and (min-width: 401px) and (max-width: 767px) {
 	body {
-		background-color: #14eaae;
+		background-color: black;
 		width: 100%;
 		overflow-x: hidden !important;
 	}
