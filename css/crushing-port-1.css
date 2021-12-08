@@ -460,12 +460,13 @@ header {
 @media screen and (min-width: 200px) and (max-width: 400px) {
 	html {
 		width: 100%;
+		overflow-x: hidden;
 	}
 	header,
 	main {
 		/* width: 100%; */
-		background-color: green;
-		overflow-x: hidden;
+		background-color: yellow;
+		
 	}
 
 	.logo {
