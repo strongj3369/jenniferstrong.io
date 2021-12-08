@@ -457,470 +457,121 @@ header {
 /* media query start */
 
 /* Extra small devices (phones, 600px and down) */
-@media screen and (min-width: 300px) and (max-width: 480px) {
+@media screen and (min-width: 200px) and (max-width: 400px) {
 	html {
-		margin: 0px;
-		padding: 0px;
+		width: 100%;
+	}
+	header,
+	main {
+		/* width: 100%; */
+		background-color: green;
 		overflow-x: hidden;
 	}
 
-	header {
-		display: flex;
-		height: 100%;
+	.logo {
+		padding: 0 1.7rem;
 	}
-
 	.nav-toggle {
 		display: none;
 	}
 
-	.logo {
-		padding-left: 2em;
-	}
-
 	.section__title--heading {
-		padding: 65px;
-		margin: -5px;
+		padding-top: 50px;
+		padding-left: 20px;
 		font-size: 2rem;
 	}
 
-	.my-work h2 {
-		font-family: 'Skranji', cursive;
-		color: #fa0075;
-		padding-left: 36px;
-	}
-
 	.features {
-		margin: 0px;
-		padding: 0px;
+		margin: 0;
+		padding: 0;
 	}
 
 	.grid {
-		margin: 0px;
-		padding: 0px;
-		width: 75%;
+		flex-basis: auto;
+		padding-left: 21px;
 	}
 
-	.box1 img {
-		width: 113%;
-		margin: 9px;
+	.box img {
+		width: 182%;
 	}
 
 	.box2 .feature__subtitle--heading-three {
-		font-size: 2.7rem;
-		margin: 44px;
-		padding-left: 70px;
+		font-size: 2.6rem;
+		padding-left: 45px;
+		margin: 0;
 	}
 
 	.box2 .feature__subtitle--heading-four {
-		font-size: 1.2rem;
-		margin: 9px;
-		padding-left: 74px;
-	}
-
-	.box2 .feature__subtitle--heading-p {
 		display: none;
 	}
 
 	.box3 .feature__subtitle--heading-three {
-		font-size: 2rem;
-		align-self: left;
-		justify-content: left;
+		font-size: 2.6rem;
+		padding-left: 45px;
+		margin: 0;
 	}
 
 	.box3 .feature__subtitle--heading-four {
-		display: none;
+		font-size: 2.6rem;
+		padding-left: 45px;
+		margin: 0;
 	}
 
-	.box3 .feature__subtitle--heading-p {
-		display: none;
+	.box3 {
+		order: 1;
 	}
-
-	.box4 img {
-		width: 110%;
-		margin: 22px;
-		padding-left: 25px;
-	}
-
-	.box5 img {
-		width: 110%;
-		margin: 16px;
-		padding-left: 25px;
-	}
-
 	.box6 .feature__subtitle--heading-three {
-		font-size: 2.2rem;
-		padding-left: -9px;
-		margin: 90px;
-		justify-content: left;
+		font-size: 2.6rem;
+		padding-left: 45px;
+		margin: 0;
 	}
 
-	.box6 .feature__subtitle--heading-four {
-		font-size: 1.2rem;
-		padding-left: 0px;
-		margin: -47px;
-		justify-content: left;
-	}
-
-	.box6 .feature__subtitle--heading-p {
+	.feature__subtitle--heading-four {
 		display: none;
 	}
 
 	.box7 .feature__subtitle--heading-three {
-		font-size: 2.1rem;
-		padding-left: 54px;
-		margin: 50px;
-		justify-content: left;
+		font-size: 2.6rem;
+		padding-left: 45px;
+		margin: 0;
 	}
 
-	.box7 .feature__subtitle--heading-four {
-		font-size: 1.4rem;
-		padding-left: 0px;
-		padding-left: 2px;
-	}
-
-	.box7 .feature__subtitle--heading-p {
+	.box p {
 		display: none;
-	}
-
-	.box8 img {
-		width: 118%;
-		margin: 3px;
 	}
 
 	.about-me {
-		width: 116%;
-	}
-
-	.about-me h2 {
-		padding-top: 54px;
-		padding-left: 119px;
-	}
-
-	.about-me h3 {
-		margin: 33px;
-		padding-left: 88px;
-	}
-
-	.about-me p {
 		display: none;
 	}
 
-	.footer-container {
-		background-color: #20202c;
-		color: var(--clr-accent);
-		width: 95%;
-		margin: 38px;
-		padding: 0px;
+	.about-me h2 {
+		padding: 0;
+		padding-bottom: 25px;
 	}
 
-	.footer-container .row .column h3 {
-		font-size: 1rem;
-		font-family: 'EB Garamond', serif;
-		padding-bottom: 19px;
+	.about-me h3 {
+		padding: 0px;
+		font-size: 25px;
 	}
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media screen and (max-width: 767px) {
-	html {
-		margin: 0px;
-		padding: 0px;
-		width: 100%;
-		overflow-x: hidden;
-	}
-
-	header {
-		padding: 1em;
-		margin: 0;
-	}
-
-	.logo {
-		font-size: 1.2rem;
-		padding-left: 1em;
-	}
-
-	.nav-toggle {
-		display: none;
-	}
-
-	.section__title--heading {
-		padding: 65px;
-		font-size: 4rem;
-	}
-
-	.my-work {
-		padding-left: 25px;
-	}
-
-	.my-work h2 {
-		margin-top: 0px;
-		color: #fa0075;
-		padding-left: -25px;
-		margin: 35px;
-	}
-
-	.features {
-		margin: 0px;
-		padding: 0px;
-	}
-
-	.grid {
-		margin: 0px;
-		padding: 0px;
-		width: 170%;
-	}
-
-	.box1 img {
-		width: 113%;
-		margin: 0px;
-	}
-
-	.box2 .feature__subtitle--heading-p {
-		padding: 38px;
-		padding-top: 0;
-		line-height: 1.6;
-		font-family: 'Garamond', cursive;
-		font-size: 1.5rem;
-		margin: 0px;
-	}
-
-	.box3 .feature__subtitle--heading-p {
-		padding: 38px;
-		padding-top: 0;
-		line-height: 1.6;
-		font-family: 'Garamond', cursive;
-		font-size: 1.5rem;
-		margin: 0px;
-	}
-
-	.box4 img {
-		width: 100%;
-		margin: 34px;
-	}
-
-	.box5 img {
-		width: 107%;
-		padding-left: 25px;
-	}
-
-	.box6 .feature__subtitle--heading-p {
-		padding: 38px;
-		padding-top: 0;
-		line-height: 1.6;
-		font-family: 'Garamond', cursive;
-		font-size: 1.5rem;
-		margin: 0px;
-	}
-
-	.box7 .feature__subtitle--heading-p {
-		padding: 38px;
-		padding-top: 0;
-		line-height: 1.6;
-		font-family: 'Garamond', cursive;
-		font-size: 1.5rem;
-		margin: 0px;
-	}
-
-	.box8 img {
-		width: 108%;
-		margin: 21px;
-	}
-
-	.about-me {
-		width: 116%;
-	}
-
-	.about-me h2 {
-		padding-top: 0px;
-		padding-left: 67px;
-	}
-
-	.about-me h3 {
-		margin: 33px;
-		padding-left: 88px;
-	}
-
-	.about-me p {
-		margin: 30px;
-		padding: 1px;
-		font-size: 0.9rem;
+@media screen and (min-width: 401px) and (max-width: 767px) {
+	body {
+		background-color: pink;
 	}
 }
 
 /* Medium devices (landscape tablets, 768px and up to 992) */
 @media only screen and (min-width: 768px) and (max-width: 992px) {
-	.main-image {
-		margin: 0px;
-		padding: 0px;
-		overflow-x: hidden;
-	}
-
-	.features {
-		margin: 0px;
-		padding: 0px;
-	}
-
-	.grid > div {
-		display: flex;
-		flex-basis: calc(42.33% - -22px);
-		/* justify-content: center; */
-		flex-direction: column;
-	}
-
-	.box1 img {
-		width: 104%;
-		margin: 17px;
-	}
-
-	.box2 .feature__subtitle--heading-three {
-		font-size: 1.5rem;
-		margin: 12px;
-		justify-content: left;
-	}
-
-	.box2 .feature__subtitle--heading-four {
-		font-size: 1rem;
-		padding-left: -1px;
-		margin: 0px;
-		justify-content: left;
-	}
-
-	.box2 .feature__subtitle--heading-p {
-		padding: 38px;
-		padding-top: 0;
-		font-family: 'Garamond', cursive;
-		font-size: 1rem;
-		justify-content: left;
-	}
-
-	.box3 .feature__subtitle--heading-three {
-		font-size: 1.5rem;
-		margin: 12px;
-		justify-content: left;
-	}
-
-	.box3 .feature__subtitle--heading-four {
-		font-size: 1rem;
-		padding-left: -1px;
-		margin: 0px;
-		justify-content: left;
-	}
-
-	.box3 .feature__subtitle--heading-p {
-		padding: 38px;
-		padding-top: 0;
-		font-family: 'Garamond', cursive;
-		font-size: 1rem;
-		justify-content: left;
-	}
-
-	.box4 img {
-		width: 90%;
-		margin: 22px;
-	}
-
-	.box5 img {
-		width: 106%;
-		margin: 16px;
-	}
-
-	.box6 .feature__subtitle--heading-three {
-		font-size: 1.5rem;
-		margin: 12px;
-		justify-content: left;
-	}
-
-	.box6 .feature__subtitle--heading-four {
-		font-size: 1rem;
-		padding-left: -1px;
-		margin: 0px;
-		justify-content: left;
-	}
-
-	.box6 .feature__subtitle--heading-p {
-		padding: 38px;
-		padding-top: 0;
-		font-family: 'Garamond', cursive;
-		font-size: 1rem;
-		justify-content: left;
-	}
-
-	.box7 .feature__subtitle--heading-three {
-		font-size: 1.5rem;
-		margin: 12px;
-		justify-content: left;
-	}
-
-	.box7 .feature__subtitle--heading-four {
-		font-size: 1rem;
-		padding-left: -1px;
-		margin: 0px;
-		justify-content: left;
-	}
-
-	.box7 .feature__subtitle--heading-p {
-		padding: 38px;
-		padding-top: 0;
-		font-family: 'Garamond', cursive;
-		font-size: 1rem;
-		justify-content: left;
-	}
-
-	.about-me {
-		width: 100%;
-	}
-
-	.about-me h2 {
-		padding-top: 0px;
-		padding-left: 72px;
-	}
-	.about-me h3 {
-		margin: 33px;
-		padding-left: 88px;
-	}
-
-	.about-me p {
-		position: relative;
-		padding: 0px;
-		color: #fa0075;
-		font-size: 1em;
-		line-height: 1.9;
-		margin: -50;
+	body {
+		background-color: purple;
 	}
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 993px) {
-	.features {
-		margin: 70px;
-	}
-
-	.grid > div {
-		display: flex;
-		flex-basis: calc(42.33% - -22px);
-		justify-content: center;
-		flex-direction: column;
-	}
-
-	.about-me {
-		width: 100%;
-	}
-
-	.about-me h2 {
-		padding-top: 0px;
-		padding-left: 412px;
-		font-size: 3.3rem;
-	}
-
-	.about-me h3 {
-		margin: 0px;
-		padding-left: 415px;
-		font-size: 2rem;
-		margin-top: 25px;
-	}
-
-	.about-me p {
-		padding-top: 19px;
-		line-height: 1.9;
+	body {
+		background-color: red;
 	}
 }
