@@ -468,8 +468,6 @@ header {
 		background-color: green;
 		overflow-x: hidden !important;
 	}
-		
-	}
 
 	.logo {
 		padding: 0 1.7rem;
@@ -494,8 +492,23 @@ header {
 		padding-left: 21px;
 	}
 
+	.grid > div {
+		display: flex;
+		flex-basis: calc(50% - 2px);
+		justify-content: center;
+		flex-direction: row;
+	}
+
+	.grid > div:last-child {
+		display: flex;
+		margin-top: 0px;
+		flex-basis: calc(50% - 2px);
+		justify-content: center;
+		flex-direction: row;
+	}
+
 	.box img {
-		width: 182%;
+		width: 100%;
 	}
 
 	.box2 .feature__subtitle--heading-three {
@@ -565,18 +578,291 @@ header {
 		width: 100%;
 		overflow-x: hidden !important;
 	}
+
+	.grid > div {
+		display: flex;
+		flex-basis: calc(50% - 2px);
+		justify-content: center;
+		flex-direction: row;
+	}
+
+	.grid > div:last-child {
+		display: flex;
+		margin-top: 0px;
+		flex-basis: calc(50% - 2px);
+		justify-content: center;
+		flex-direction: row;
+	}
+	.box img {
+		width: 100%;
+	}
 }
 
 /* Medium devices (landscape tablets, 768px and up to 992) */
-@media only screen and (min-width: 768px) and (max-width: 992px) {
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
 	body {
 		background-color: purple;
+	}
+	.grid > div {
+		display: flex;
+		flex-basis: calc(50% - 2px);
+		justify-content: center;
+		flex-direction: row;
+	}
+
+	.grid > div:last-child {
+		display: flex;
+		margin-top: 0px;
+		flex-basis: calc(50% - 2px);
+		justify-content: center;
+		flex-direction: row;
+	}
+	.box img {
+		width: 100%;
 	}
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 993px) {
+@media only screen and (min-width: 901px) and (max-width: 1200px) {
+	body {
+		background-color: yellow;
+	}
+
+	.grid > div {
+		display: flex;
+		flex-basis: calc(48.33% - 12px);
+		/* justify-content: center; */
+		flex-direction: row;
+	}
+
+	.grid > div:last-child {
+		display: flex;
+		margin-top: 0px;
+		flex-basis: calc(43% - 2px);
+		/* justify-content: center; */
+		flex-direction: row;
+	}
+	.box img {
+		width: 100%;
+	}
+
+	.box2 {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		color: var(--clr-accent);
+		line-height: 1.5;
+	}
+
+	.box2 .feature__subtitle--heading-three {
+		font-size: 5.3rem;
+		margin: 0px 200px;
+	}
+
+	.box2 .feature__subtitle--heading-four {
+		font-size: 3.2rem;
+		padding-bottom: 0px;
+	}
+
+	.box2 .feature__subtitle--heading-p {
+		padding: 0px 220px;
+		line-height: 1.6;
+		font-family: 'Garamond', cursive;
+		font-size: 2.6rem;
+	}
+
+	.box3 {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		color: var(--clr-accent);
+		line-height: 1.5;
+	}
+
+	.box3 .feature__subtitle--heading-three {
+		font-size: 5.3rem;
+		margin: 0px 200px;
+		padding: 0px 250px;
+	}
+	.box3 .feature__subtitle--heading-four {
+		font-size: 3.2rem;
+		padding-bottom: 0px;
+	}
+
+	.box3 .feature__subtitle--heading-p {
+		padding: 0px 220px;
+		line-height: 1.6;
+		font-family: 'Garamond', cursive;
+		font-size: 2.6rem;
+	}
+
+	.box6 {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		color: var(--clr-accent);
+		line-height: 1.5;
+	}
+
+	.box6 .feature__subtitle--heading-three {
+		font-size: 5.3rem;
+		margin: 0px 200px;
+	}
+	.box6 .feature__subtitle--heading-four {
+		font-size: 3.2rem;
+		padding: 0px 250px;
+	}
+
+	.box6 .feature__subtitle--heading-p {
+		padding: 0px 220px;
+		line-height: 1.6;
+		font-family: 'Garamond', cursive;
+		font-size: 2.6rem;
+	}
+
+	.box7 {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		color: var(--clr-accent);
+		line-height: 1.5;
+	}
+
+	.box7 .feature__subtitle--heading-three {
+		font-size: 5.3rem;
+		margin: 0px 200px;
+	}
+	.box7 .feature__subtitle--heading-four {
+		font-size: 3.2rem;
+		padding-bottom: 0px;
+	}
+
+	.box7 .feature__subtitle--heading-p {
+		padding: 0px 220px;
+		line-height: 1.6;
+		font-family: 'Garamond', cursive;
+		font-size: 2.6rem;
+	}
+}
+
+@media only screen and (min-width: 1201px) {
 	body {
 		background-color: red;
+	}
+
+	.grid > div {
+		display: flex;
+		flex-basis: calc(48.33% - 12px);
+		/* justify-content: center; */
+		flex-direction: row;
+	}
+
+	.grid > div:last-child {
+		display: flex;
+		margin-top: 0px;
+		flex-basis: calc(43% - 2px);
+		/* justify-content: center; */
+		flex-direction: row;
+	}
+	.box img {
+		width: 100%;
+	}
+
+	.box2 {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		color: var(--clr-accent);
+		line-height: 1.5;
+	}
+
+	.box2 .feature__subtitle--heading-three {
+		font-size: 5.3rem;
+		margin: 0px 200px;
+	}
+
+	.box2 .feature__subtitle--heading-four {
+		font-size: 3.2rem;
+		padding-bottom: 0px;
+	}
+
+	.box2 .feature__subtitle--heading-p {
+		padding: 0px 220px;
+		line-height: 1.6;
+		font-family: 'Garamond', cursive;
+		font-size: 2.6rem;
+	}
+
+	.box3 {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		color: var(--clr-accent);
+		line-height: 1.5;
+	}
+
+	.box3 .feature__subtitle--heading-three {
+		font-size: 5.3rem;
+		margin: 0px 200px;
+		padding: 0px 250px;
+	}
+	.box3 .feature__subtitle--heading-four {
+		font-size: 3.2rem;
+		padding-bottom: 0px;
+	}
+
+	.box3 .feature__subtitle--heading-p {
+		padding: 0px 220px;
+		line-height: 1.6;
+		font-family: 'Garamond', cursive;
+		font-size: 2.6rem;
+	}
+
+	.box6 {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		color: var(--clr-accent);
+		line-height: 1.5;
+	}
+
+	.box6 .feature__subtitle--heading-three {
+		font-size: 5.3rem;
+		margin: 0px 200px;
+	}
+	.box6 .feature__subtitle--heading-four {
+		font-size: 3.2rem;
+		padding: 0px 250px;
+	}
+
+	.box6 .feature__subtitle--heading-p {
+		padding: 0px 220px;
+		line-height: 1.6;
+		font-family: 'Garamond', cursive;
+		font-size: 2.6rem;
+	}
+
+	.box7 {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		color: var(--clr-accent);
+		line-height: 1.5;
+	}
+
+	.box7 .feature__subtitle--heading-three {
+		font-size: 5.3rem;
+		margin: 0px 200px;
+	}
+	.box7 .feature__subtitle--heading-four {
+		font-size: 3.2rem;
+		padding-bottom: 0px;
+	}
+
+	.box7 .feature__subtitle--heading-p {
+		padding: 0px 220px;
+		line-height: 1.6;
+		font-family: 'Garamond', cursive;
+		font-size: 2.6rem;
 	}
 }
