@@ -368,7 +368,7 @@ header {
 
 .about-me h2 {
 	position: relative;
-	padding: 275px 40px 15px 400px;
+	padding: 50px;
 	color: #fa0075;
 	font-size: 36px;
 	font-family: 'EB Garamond', serif;
@@ -377,14 +377,14 @@ header {
 
 .about-me h3 {
 	position: relative;
-	padding: 0px 30px 30px 410px;
+	padding: 10px;
 	color: #fa0075;
 	font-size: 25px;
 }
 
 .about-me p {
 	position: relative;
-	padding: 0px 30px 300px 410px;
+	padding: 10px;
 	color: #fa0075;
 	font-size: 1.2em;
 	line-height: 25px;
@@ -465,7 +465,7 @@ header {
 	header,
 	main {
 		width: 100%;
-		background-color: green;
+		/* background-color: green; */
 		overflow-x: hidden !important;
 	}
 
@@ -651,26 +651,20 @@ header {
 	.about-me {
 		background-image: url(../img/about-me.png);
 		background-repeat: no-repeat;
-		margin: 0;
-		background-size: 100%;
-		width: 100%;
-		margin-top: 62px;
 	}
-
 	.about-me h2 {
-		position: relative;
-		color: #fa0075;
-		font-size: 20px;
-		font-family: 'EB Garamond', serif;
-		text-transform: uppercase;
+		font-size: 1.2rem;
+		margin: 0;
+		padding: 0;
+		line-height: 2.4;
 	}
 
 	.about-me h3 {
-		display: none;
-	}
-
-	.about-me p {
+		font-size: 0.9rem;
+		margin: 0;
 		padding: 0;
+	}
+	.about-me p {
 		display: none;
 	}
 }
@@ -684,7 +678,7 @@ header {
 	header,
 	main {
 		width: 100%;
-		background-color: black;
+		/* background-color: black; */
 		overflow-x: hidden !important;
 	}
 
@@ -872,12 +866,36 @@ header {
 	.box8 {
 		width: 50%;
 	}
+
+	.about-me h2 {
+		position: relative;
+		padding: 0px;
+		margin: 0;
+		font-size: 1.7rem;
+		line-height: 2.1;
+	}
+
+	.about-me h3 {
+		position: relative;
+		padding: 0px;
+		color: #fa0075;
+		font-size: 1.5rem;
+		line-height: 1.5;
+	}
+
+	.about-me p {
+		position: relative;
+		padding: 0px;
+		color: #fa0075;
+		font-size: 0.9em;
+		line-height: 1.4;
+	}
 }
 
 /* Medium devices (landscape tablets, 768px and up to 992) */
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
 	body {
-		background-color: purple;
+		/* background-color: purple; */
 	}
 	.features {
 		margin: 10px;
@@ -933,12 +951,12 @@ header {
 	}
 
 	.box3 .feature__subtitle--heading-three {
-		font-size: 1.8rem;
+		font-size: 1.7rem;
 		margin: 0px 0px;
 	}
 
 	.box3 .feature__subtitle--heading-four {
-		font-size: 1.2rem;
+		font-size: 1.4rem;
 		padding-bottom: 0px;
 	}
 
@@ -1000,30 +1018,31 @@ header {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 901px) and (max-width: 1348px) {
 	body {
-		background-color: yellow;
+		/* background-color: yellow; */
 	}
 
 	.features {
-		margin: 10px;
-		padding: 12px;
+		margin: 12px;
+		padding: 60px;
 	}
 
 	.grid > div {
 		display: flex;
 		flex-basis: calc(46% - 12px);
-		/* justify-content: center; */
 		flex-direction: row;
 	}
 
 	.grid > div:last-child {
 		display: flex;
-		margin-top: 0px;
+		margin-top: 0;
+		padding: 0;
 		flex-basis: calc(46% - 2px);
-		/* justify-content: center; */
 		flex-direction: row;
 	}
 	.box1 img {
 		width: 100%;
+		margin: 0;
+		padding: 0;
 	}
 
 	.box2 {
@@ -1032,20 +1051,25 @@ header {
 		flex-wrap: wrap;
 		color: var(--clr-accent);
 		line-height: 1.5;
+		margin: 0;
+		padding: 24px;
 	}
 
 	.box2 .feature__subtitle--heading-three {
 		font-size: 1.8rem;
-		margin: 0px 75px;
+		margin: 0;
+		padding: 0;
 	}
 
 	.box2 .feature__subtitle--heading-four {
 		font-size: 1.2rem;
-		padding-bottom: 0px;
+		padding: 0;
+		margin: 0;
 	}
 
 	.box2 .feature__subtitle--heading-p {
-		padding: 0px 30px;
+		padding: 0;
+		margin: 0;
 		line-height: 1.3;
 		font-family: 'Garamond', cursive;
 		font-size: 1.2rem;
@@ -1057,47 +1081,66 @@ header {
 		flex-wrap: wrap;
 		color: var(--clr-accent);
 		line-height: 1.5;
+		margin: 0;
+		padding: 0;
 	}
 
 	.box3 .feature__subtitle--heading-three {
-		font-size: 2.1rem;
-		margin: 0px 200px;
+		font-size: 2.3rem;
+		margin: 0;
+		padding: 0;
 	}
 
 	.box3 .feature__subtitle--heading-four {
-		font-size: 1.8rem;
-		padding-bottom: 0px;
+		font-size: 2rem;
+		padding: 0;
+		margin: 0;
 	}
 
 	.box3 .feature__subtitle--heading-p {
-		padding: 0px 45px;
+		padding: 20px;
+		margin: 0;
 		line-height: 1.6;
 		font-family: 'Garamond', cursive;
 		font-size: 1.2rem;
 	}
 
 	.box4 img {
-		width: 65%;
+		width: 90%;
+		margin: 0;
+		padding-left: 20px;
 	}
+
+	.box5 img {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+
 	.box6 {
 		display: flex;
 		flex-direction: column;
 		flex-wrap: wrap;
 		color: var(--clr-accent);
 		line-height: 1.5;
+		margin: 0;
+		padding: 0;
 	}
 
 	.box6 .feature__subtitle--heading-three {
 		font-size: 2.3rem;
-		margin: 0px 100px;
+		margin: 20px;
+		padding: 20px;
 	}
 	.box6 .feature__subtitle--heading-four {
 		font-size: 1.6rem;
-		padding: 0px 0px;
+		padding: 0;
+		margin: 0;
 	}
 
 	.box6 .feature__subtitle--heading-p {
-		padding: 0px 110px;
+		padding: 0;
+		margin: 0;
 		line-height: 1.6;
 		font-family: 'Garamond', cursive;
 		font-size: 1.3rem;
@@ -1109,34 +1152,38 @@ header {
 		flex-wrap: wrap;
 		color: var(--clr-accent);
 		line-height: 1.5;
+		margin: 0;
+		padding: 0;
 	}
 
 	.box7 .feature__subtitle--heading-three {
 		font-size: 2.2rem;
-		margin: 0px 65px;
+		margin: 0;
+		padding: 0;
 	}
 	.box7 .feature__subtitle--heading-four {
 		font-size: 1.6rem;
-		padding-bottom: 0px;
+		padding: 0;
+		margin: 0;
 	}
 
 	.box7 .feature__subtitle--heading-p {
-		padding: 0px 70px;
+		padding: 0px;
+		margin: 0;
 		line-height: 1.6;
 		font-family: 'Garamond', cursive;
-		font-size: 1.2rem;
+		font-size: 1.4rem;
 	}
 }
 
 @media only screen and (min-width: 1349px) {
 	body {
-		background-color: red;
+		/* background-color: red; */
 	}
 
 	.grid > div {
 		display: flex;
 		flex-basis: calc(48.33% - 12px);
-		/* justify-content: center; */
 		flex-direction: row;
 	}
 
@@ -1144,9 +1191,9 @@ header {
 		display: flex;
 		margin-top: 0px;
 		flex-basis: calc(43% - 2px);
-		/* justify-content: center; */
 		flex-direction: row;
 	}
+
 	.box img {
 		width: 100%;
 	}
@@ -1246,5 +1293,8 @@ header {
 		line-height: 1.3;
 		font-family: 'Garamond', cursive;
 		font-size: 1.4rem;
+	}
+	.about-me p {
+		padding-right: 34rem;
 	}
 }
