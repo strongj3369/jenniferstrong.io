@@ -12,15 +12,15 @@
 
 	--fw-reg: 300;
 	--fw-bold: 900;
-
-	--clr-light: #fdefef;
+       
+	--clr-light: #fdfbf5;
 	--clr-dark: #20202c;
 	--clr-accent: #c90460;
 
-	--fs-h1: 4rem;
+	/* --fs-h1: 4rem;
 	--fs-h2: 2.25rem;
 	--fs-h3: 1.25rem;
-	--fs-body: 1rem;
+	--fs-body: 1rem; */
 }
 
 @media screen and (min-width: 600px) {
@@ -80,7 +80,7 @@ h3 {
 .section__title--heading {
 	font-family: var(--ff-primary);
 	font-weight: var(--fw-bold);
-	color: var(--clr-accent);
+	color: var(--clr-light);
 	margin: 0 1.5em;
 	padding: 5em;
 	font-size: 40px;
@@ -88,7 +88,7 @@ h3 {
 }
 
 .section__title--heading strong {
-	color: var(--clr-light);
+	color: var(--clr-accent);
 	font-family: 'Bebas Neue', cursive;
 	font-size: 3rem;
 	letter-spacing: .3rem;
@@ -103,7 +103,7 @@ header {
 	display: flex;
 	justify-content: space-between;
 	padding: 1em;
-	margin-right: 800px;
+	
 }
 
 .logo {
@@ -265,12 +265,6 @@ header {
 	flex-direction: column;
 }
 
-/* .grid > div > div {
-	display: flex;
-	justify-content: center;
-	flex-direction: row;
-} */
-
 .box {
 	margin: 12px 10px;
 	align-items: center;
@@ -376,25 +370,26 @@ header {
 }
 
 
-.box10 .feature__subtitle {
-	padding: 30px;
-}
-
 .box10 .feature__subtitle--heading-three {
 	font-size: 2.3rem;
+	margin: 12px 10px;
+	padding-top: 25px;
+	align-items: center;
 	color: var(--clr-light);
-	
+
 }
 
 .box10 .feature__subtitle--heading-four {
-	font-size: 1.6rem;
-	padding-bottom: 0px;
+	font-size: 1.5rem;
+	padding: 0 75px;
 	color: var(--clr-light);
-	margin: 0 120px;
+	margin: 12px 10px;
+	align-items: center;
 }
 
 .box10 .feature__subtitle--heading-p {
-	padding-top: 0;
+	padding: 50px;
+	padding-top: 0px;
 	line-height: 1.6;
 	font-family: var(--ff-primary);
 	font-size: 1.5rem;
@@ -405,13 +400,12 @@ header {
 /* about me */
 .about-me {
 	background-color: #adacac;
-	padding: 4rem;
+	padding: 2rem;
 	
 }
 
 .about-me h2 {
 	position: relative;
-	padding: 0px;
 	padding-bottom: 20px;
 	color: var(--clr-light);
 	font-size: 36px;
@@ -566,6 +560,15 @@ header {
 		display: none;
 	}
 
+	.nav__link:hover {
+		color: var(--clr-accent);
+	}
+
+	.section__title--heading strong {
+		color: var(--clr-light);
+	}
+
+
 	.section__title--heading {
 		padding-top: 50px;
 		padding-left: 20px;
@@ -619,7 +622,7 @@ header {
 
 	.box2 .feature__subtitle--heading-four {
 		font-size: 0.9rem;
-		padding: 0px;
+		padding: 12px;
 		margin-bottom: 80px;
 	}
 
@@ -718,12 +721,15 @@ header {
 	}
 
 	.box7 .feature__subtitle--heading-three {
-		font-size: 1rem;
+		font-size: 1.1rem;
 		margin: 0px 0px;
+
 	}
+
 	.box7 .feature__subtitle--heading-four {
 		font-size: 1rem;
-		padding-bottom: 0px;
+		padding: 0px 23px;
+		padding-bottom: 80px;
 	}
 
 	.box7 .feature__subtitle--heading-p {
@@ -738,25 +744,70 @@ header {
 		width: 50%;
 	}
 
+	.box9 {
+		order: 9;
+	}
+
+	.box10 {
+		order: 10;
+	}
+
+	.box10 .feature__subtitle--heading-three {
+		font-size: 1.2rem;
+		margin: 0;
+		padding: 23px;
+	}
+
+	
+	.box10 .feature__subtitle--heading-four {
+		font-size: 1rem;
+		padding: 0px 20px;
+		margin-bottom: 80px;
+	}
+	.box10 p {
+		display: none;
+	}
+
+
+
+
+
+
+
+
 	.about-me {
 		background-image: url(../img/about-me.png);
 		background-repeat: no-repeat;
 	}
+
 	.about-me h2 {
 		font-size: 1.2rem;
 		margin: 0;
 		padding: 0;
-		line-height: 2.4;
+		line-height: 1.3;
 	}
 
 	.about-me h3 {
-		font-size: 0.9rem;
+		font-size: 1.1rem;
 		margin: 0;
-		padding: 0;
+		padding: 20px 0px;
+		line-height: 1.2;
 	}
+
 	.about-me p {
 		display: none;
 	}
+
+	.about-me .link-img {
+		display: none;
+	}
+
+	#me h5{
+		display: none;
+	}
+
+
+
 }
 
 
@@ -829,14 +880,14 @@ header {
 	}
 
 	.box2 .feature__subtitle--heading-three {
-		font-size: 1rem;
+		font-size: 1.3rem;
 		margin: 0;
-		padding: 0;
+		padding: 10px;
 	}
 
 	.box2 .feature__subtitle--heading-four {
 		font-size: 1rem;
-		padding: 0px;
+		padding: 0px 50px;
 		margin-bottom: 80px;
 	}
 
@@ -857,13 +908,14 @@ header {
 	}
 
 	.box3 .feature__subtitle--heading-three {
-		font-size: 1rem;
-		margin: 0px 0px;
+		font-size: 1.3rem;
+		margin: 0;
+		padding: 10px;
 	}
 
 	.box3 .feature__subtitle--heading-four {
 		font-size: 1rem;
-		padding-bottom: 0px;
+		padding: 0px 50px;
 		margin-bottom: 80px;
 	}
 
@@ -909,17 +961,16 @@ header {
 	}
 
 	.box6 .feature__subtitle--heading-three {
-		font-size: 1rem;
-		margin: 0px 0px;
-		align-items: center;
+		font-size: 1.3rem;
+		margin: 0;
+		padding: 10px;
 	}
 
 
 	.box6 .feature__subtitle--heading-four {
 		font-size: 1rem;
-		padding: 0px 0px;
+		padding: 0px 50px;
 		margin-bottom: 80px;
-		align-items: center;
 	}
 
 	.box6 .feature__subtitle--heading-p {
@@ -941,16 +992,15 @@ header {
 	}
 
 	.box7 .feature__subtitle--heading-three {
-		font-size: 1rem;
-		margin: 0px 0px;
-		word-spacing: 5px;
-		margin-right: 10px;
+		font-size: 1.3rem;
+		margin: 0;
+		padding: 10px;
 	}
 
 	.box7 .feature__subtitle--heading-four {
 		font-size: 1rem;
-		padding-bottom: 0px;
-		word-spacing: 5px;
+		padding: 0px 50px;
+		margin-bottom: 80px;
 	}
 
 	.box7 .feature__subtitle--heading-p {
@@ -973,6 +1023,18 @@ header {
 		order: 10;
 	}
 
+	.box10 .feature__subtitle--heading-three {
+		font-size: 1.3rem;
+		margin: 0;
+		padding: 10px;
+	}
+
+	
+	.box10 .feature__subtitle--heading-four {
+		font-size: 1rem;
+		padding: 0px 50px;
+		margin-bottom: 80px;
+	}
 	.box10 p {
 		display: none;
 	}
@@ -980,25 +1042,26 @@ header {
 
 	.about-me h2 {
 		position: relative;
-		padding: 0px;
+		padding: 20px;
 		margin: 0;
-		font-size: 1.7rem;
-		line-height: 2.1;
+		font-size: 1.5rem;
+		line-height: 1.2;
 	}
+
 
 	.about-me h3 {
 		position: relative;
-		padding: 0px;
-		color: var(--clr-accent);
-		font-size: 1.5rem;
-		line-height: 1.5;
+		padding: 20px;
+		color: var(--clr-light);
+		font-size: 1.2rem;
+		line-height: 1.2;
 	}
 
 	.about-me p {
 		position: relative;
 		padding: 0px;
 		padding-top: 20px;
-		color: var(--clr-accent);
+		color: var(--clr-light);
 		font-size: 0.9em;
 		line-height: 1.4;
 	}
@@ -1053,13 +1116,15 @@ header {
 	}
 
 	.box2 .feature__subtitle--heading-three {
-		font-size: 1.6rem;
-		margin: 0px 0px;
+		font-size: 1.4rem;
+		margin: 0px;
+		padding: 25px;
 	}
 
 	.box2 .feature__subtitle--heading-four {
 		font-size: 1.2rem;
-		padding-bottom: 0px;
+		padding: 25px;
+		margin: 0px;
 	}
 
 	.box2 .feature__subtitle--heading-p {
@@ -1075,13 +1140,14 @@ header {
 	}
 
 	.box3 .feature__subtitle--heading-three {
-		font-size: 1.7rem;
-		margin: 0px 0px;
+		font-size: 1.5rem;
+		margin: 0px;
 	}
 
 	.box3 .feature__subtitle--heading-four {
-		font-size: 1.4rem;
-		padding-bottom: 0px;
+		font-size: 1.2rem;
+		padding: 0px 25px;
+		margin: 0px;
 	}
 
 	.box3 .feature__subtitle--heading-p {
@@ -1105,8 +1171,9 @@ header {
 	}
 
 	.box6 .feature__subtitle--heading-three {
-		font-size: 1.8rem;
-		margin: 0px 100px;
+		font-size: 1.5rem;
+		padding: 10px;
+		margin: 0px;
 	}
 	.box6 .feature__subtitle--heading-four {
 		font-size: 1.2rem;
@@ -1126,17 +1193,45 @@ header {
 	}
 
 	.box7 .feature__subtitle--heading-three {
-		font-size: 1.6rem;
-		margin: 0px 0px;
+		font-size: 1.5rem;
+		padding: 10px 35px;
+		margin: 25px;
 	}
+
+
 	.box7 .feature__subtitle--heading-four {
 		font-size: 1.2rem;
-		padding-bottom: 0px;
+		padding: 0 50px;
 	}
 
 	.box7 .feature__subtitle--heading-p {
 		display: none;
 	}
+
+	
+	.box10 {
+		order: 10;
+	}
+
+	.box10 .feature__subtitle--heading-three {
+		font-size: 1.3rem;
+		margin: 0;
+		padding: 30px;
+	}
+
+	
+	.box10 .feature__subtitle--heading-four {
+		font-size: 1rem;
+		padding: 0px 40px;
+		margin-bottom: 80px;
+	}
+
+
+	.box10 p {
+		display: none;
+	}
+
+
 
 	.about-me .link-img {
 		display: none;
@@ -1153,10 +1248,11 @@ header {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 901px) and (max-width: 1348px) {
-	body {
-		/* background-color: yellow; */
+	
+	.logo{
+		font-size: 1.2rem;
+		/* padding: 10px; */
 	}
-
 	
 	.features {
 		margin: 12px;
@@ -1193,14 +1289,14 @@ header {
 	}
 
 	.box2 .feature__subtitle--heading-three {
-		font-size: 1.8rem;
+		font-size: 1.6rem;
 		margin: 0;
-		padding: 0;
+		padding: 20px;
 	}
 
 	.box2 .feature__subtitle--heading-four {
 		font-size: 1.2rem;
-		padding: 0;
+		padding: 5px;
 		margin: 0;
 	}
 
@@ -1223,13 +1319,13 @@ header {
 	}
 
 	.box3 .feature__subtitle--heading-three {
-		font-size: 2.3rem;
+		font-size: 2rem;
 		margin: 0;
 		padding: 0;
 	}
 
 	.box3 .feature__subtitle--heading-four {
-		font-size: 2rem;
+		font-size: 1.3rem;
 		padding: 0;
 		margin: 0;
 	}
@@ -1265,13 +1361,13 @@ header {
 	}
 
 	.box6 .feature__subtitle--heading-three {
-		font-size: 2.3rem;
+		font-size: 2rem;
 		margin: 20px;
 		padding: 20px;
 	}
 	.box6 .feature__subtitle--heading-four {
-		font-size: 1.6rem;
-		padding: 0;
+		font-size: 1.3rem;
+		padding: 10px;
 		margin: 0;
 	}
 
@@ -1294,14 +1390,14 @@ header {
 	}
 
 	.box7 .feature__subtitle--heading-three {
-		font-size: 2.2rem;
-		margin: 0;
-		padding: 0;
-	}
-	.box7 .feature__subtitle--heading-four {
 		font-size: 1.6rem;
-		padding: 0;
 		margin: 0;
+		padding-bottom: 0;
+	}
+
+	.box7 .feature__subtitle--heading-four {
+		font-size: 1.3rem;
+		padding: 25px;
 	}
 
 	.box7 .feature__subtitle--heading-p {
@@ -1312,19 +1408,41 @@ header {
 		font-size: 1.4rem;
 	}
 
-	.about-me p {
-		margin: 0;
+	.box10 .feature__subtitle--heading-three {
+		font-size: 1.5rem;
+
 	}
 
-	.about-me .link-img {
-		margin-top: -296px;
-		margin-right: -54px;
+	.box10 .feature__subtitle--heading-four {
+		font-size: 1.5rem;
+		padding: 26px;
+	}
+
+	.box10 .feature__subtitle--heading-p {
+		display: none;
+	}
+
+
+	.about-me h3 {
+		padding: 10px 0px;
+		margin: 0px;
+		font-size: 1.5rem;
+	}
+
+	.about-me p {
+		padding: 25px 388px 0px 0px;
+		line-height: 1.3;
+	}
+
+	#me .link-img {
+		margin-top: -255px;
+		margin-right: 37px;
 	}
 
 	#me h5 {
-		margin-top: -54px;
-		margin-right: -54px;
-		
+		margin-top: -32px;
+		margin-right: 25px;
+		font-size: 1.8rem;
 	}
 
 }
@@ -1360,21 +1478,23 @@ header {
 	}
 
 	.box2 .feature__subtitle--heading-three {
-		font-size: 2.4rem;
-		margin: 0px 120px;
+		font-size: 1.9rem;
+		padding: 0 20px;
+		margin: 0px;
 	}
 
 	.box2 .feature__subtitle--heading-four {
-		font-size: 1.6rem;
-		padding-bottom: 0px;
-		margin: 0 120px;
+		font-size: 1.3rem;
+		padding: 40px;
+		margin: 0px;
 	}
 
 	.box2 .feature__subtitle--heading-p {
-		padding: 0px 110px;
+		padding: 0 25px;
+		margin: 0;
 		line-height: 1.3;
 		font-family: var(--ff-primary);
-		font-size: 1.3rem;
+		font-size: 1.2rem;
 	}
 
 	.box3 {
@@ -1386,21 +1506,21 @@ header {
 	}
 
 	.box3 .feature__subtitle--heading-three {
-		font-size: 2.4rem;
-		margin: 0px 175px;
+		font-size: 1.9rem;
+		padding-top: 35px;
 	}
 	.box3 .feature__subtitle--heading-four {
-		font-size: 1.6rem;
-		padding-bottom: 0px;
-		margin: 0 120px;
+		font-size: 1.3rem;
+		padding: 40px;
+		margin: 0px;
 	}
 
 	.box3 .feature__subtitle--heading-p {
-		padding: 0px 28px;
+		padding: 26px;
 		line-height: 1.3;
 		font-family: var(--ff-primary);
-		font-size: 1.3rem;
-		margin: 0 90px;
+		font-size: 1.2rem;
+		margin: 0px;
 	}
 
 	.box6 {
@@ -1412,20 +1532,21 @@ header {
 	}
 
 	.box6 .feature__subtitle--heading-three {
-		font-size: 2.4rem;
-		margin: 0px 170px;
+		font-size: 2rem;
+		margin: 0px 70px;
+		padding: 25px;
 	}
 	.box6 .feature__subtitle--heading-four {
-		font-size: 1.6rem;
-		padding: 0px 0px;
-		margin: 0 120px;
+		font-size: 1.3rem;
+		padding: 20px;
+		margin: 0 30px;
 	}
 
 	.box6 .feature__subtitle--heading-p {
-		padding: 0px 110px;
+		padding: 20px;
 		line-height: 1.3;
 		font-family: var(--ff-primary);
-		font-size: 1.3rem;
+		font-size: 1.2rem;
 	}
 
 	.box7 {
@@ -1437,22 +1558,61 @@ header {
 	}
 
 	.box7 .feature__subtitle--heading-three {
-		font-size: 2.5rem;
-		margin: 0px 110px;
+		font-size: 1.8rem;
+		margin: 10px;
+		padding: 30px;
 	}
 	.box7 .feature__subtitle--heading-four {
-		font-size: 1.9rem;
-		padding-bottom: 0px;
-		margin: 0 120px;
+		font-size: 1.4rem;
+		padding: 35px;
+		margin: 0 40px;
 	}
 
 	.box7 .feature__subtitle--heading-p {
-		padding: 0px 120px;
+		padding: 0px 30px;
 		line-height: 1.3;
 		font-family: var(--ff-primary);
-		font-size: 1.4rem;
+		font-size: 1.2rem;
 	}
+
+	.box10 .feature__subtitle--heading-three {
+		font-size: 1.6rem;
+		margin: 12px 10px;
+		padding-top: 15px;
+	}
+
+	.box10 .feature__subtitle--heading-four {
+		font-size: 1.3rem;
+		padding: 0 30px;
+		
+	}
+
+	.box10 .feature__subtitle--heading-p {
+		padding: 15px;
+		font-size: 1.2rem;
+	}
+
+	.about-me {
+		padding: 80px;
+	}
+
+
+
 	.about-me p {
 		padding-right: 34rem;
 	}
+
+	#me .link-img {
+		margin-top: -240px;
+		margin-right: 155px;
+	}
+
+	#me h5 {
+		margin-top: 15px;
+		margin-right: 143px;
+		font-size: 1.8rem;
+	}
+
+
+
 }
