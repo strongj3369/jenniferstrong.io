@@ -438,7 +438,7 @@ header {
 	margin: 0;
 }
 
-.about-me .link-img{
+#link-img{
 	background: url('/img/link-img.jpg') no-repeat;
 	width: 200px;
     height: 200px;
