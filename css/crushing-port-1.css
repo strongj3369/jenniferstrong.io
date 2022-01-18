@@ -566,7 +566,9 @@ header {
 
 	.logo {
 		padding: 0 1.7rem;
+		font-size: 1.2rem;
 	}
+	
 	.nav-toggle {
 		display: none;
 	}
@@ -577,13 +579,16 @@ header {
 
 	.section__title--heading strong {
 		color: var(--clr-light);
+		font-family: Skranji;
+		font-weight: 300;
+		font-size: 2.1rem;
 	}
 
 
 	.section__title--heading {
 		padding-top: 50px;
-		padding-left: 20px;
-		font-size: 2rem;
+		padding-left: -30px;
+		font-size: 1.5rem;
 	}
 
 	.features {
@@ -787,11 +792,6 @@ header {
 
 	.box10 p {
 		display: none;
-	}
-
-	.about-me {
-		background-image: url(../img/about-me.png);
-		background-repeat: no-repeat;
 	}
 
 	.about-me h2 {
@@ -1553,6 +1553,7 @@ header {
 	
 	.nav__link:hover {
 		color: var(--clr-accent);
+		
 	}
 
 	.grid > div {
