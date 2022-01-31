@@ -511,7 +511,7 @@ header {
 }
 
 
-#me h5{
+#me h4{
 	font-size: 1.8rem;
 	font-family: var(--ff-secondary);
 	margin-top: -140px;
@@ -522,7 +522,7 @@ header {
 	position: relative;
 }
 
-#me  h5:after {
+#me  h4:after {
 	content: '';
 	display: table;
 	clear: both;
@@ -539,7 +539,7 @@ header {
 		display: none;
 	}
 
-	.link-img, h5 {
+	.link-img, h4 {
 		display: none;
 	}
 }
@@ -550,7 +550,7 @@ header {
 		margin: 0 auto;
 	}
 
-	.link-img, h5 {
+	.link-img, h4 {
 		display: none;
 	}
 }
@@ -711,7 +711,7 @@ header {
 }
 
 .footer-container .company-details h2 {
-	color: var(--clr-accent);
+	color: var(--clr-light);
 	margin: 65px;
 	font-size: 2rem;
 	text-align: center;
@@ -737,12 +737,12 @@ header {
 }
 
 .footer-container .row .column a {
-	color: var(--clr-accent);
+	color: var(--clr-light);
 	text-decoration: none;
 }
 
 .footer-container .row .column a:hover {
-	color: var(--clr-light);
+	color: var(--clr-accent);
 }
 
 .footer-container .row:after {
@@ -771,7 +771,7 @@ header {
 } 
 
 .footer-container .column .social-media i:hover{
-	color: var(--clr-light);
+	color: var(--clr-accent);
 }
 
 
@@ -780,7 +780,7 @@ header {
 	font-size: var(--fs-h4);
 }
 
-.copyright h6 {
+.copyright h5 {
 	padding-bottom: 5px;
 	margin: 0;
 	font-weight: var(--fw-light);
