@@ -16,7 +16,7 @@
        
 	--clr-light: #ffffff;
 	--clr-dark: #20202c;
-	--clr-accent: #c90460;
+	--clr-accent: #f10791;
 
 }
 	@media (min-width: 800px) {
@@ -77,8 +77,9 @@ h3 {
 .section__title--heading strong {
 	color: var(--clr-accent);
 	font-family: 'Roboto Mono', monospace;
-	font-size: 4.2rem;
+	font-size: 4.4rem;
 	letter-spacing: .3rem;
+	font-weight: var(--fw-bold);
 }
 
 .feature__subtitle {
@@ -232,7 +233,7 @@ header {
 	}
 
 	.section__title--heading strong {
-		color: var(--clr-accent);
+		color: var(--clr-light);
 		font-family: 'Roboto Mono', monospace;
 		font-size: 2rem;
 		letter-spacing: .3rem;
@@ -244,6 +245,13 @@ header {
 
 	.nav-toggle {
 		display: none;
+	}
+
+	.section__title--heading strong {
+		color: var(--clr-light);
+		font-family: 'Roboto Mono', monospace;
+		font-size: 4rem;
+		letter-spacing: .3rem;
 	}
 }
 
@@ -780,7 +788,7 @@ header {
 	font-size: var(--fs-h4);
 }
 
-.copyright h5 {
+.copyright h6 {
 	padding-bottom: 5px;
 	margin: 0;
 	font-weight: var(--fw-light);
