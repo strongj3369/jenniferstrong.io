@@ -474,6 +474,43 @@ header {
 }
 
 
+/* large devices   */
+@media only screen and (min-width: 1200px) and (max-width: 1399px)  {
+
+	.content .row .box-2 p{
+		display: none;
+		
+	}
+
+	.content .row .box-3 p{
+		display: none;
+		
+	}
+	.content .row .box-6 p{
+		display: none;
+		
+	}
+	.content .row .box-7 p{
+		display: none;
+		
+	}
+	.content .row .box-10 p{
+		display: none;
+		
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /* about me */
 .about {
