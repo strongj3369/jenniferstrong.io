@@ -741,7 +741,7 @@ header {
 
 .footer-container {
 	display: grid;
-	background-color: 
+	background-color: #3b5c6b; 
 	text-align: center;
 	color: var(--clr-light);
 	padding: 2em 0;
