@@ -305,7 +305,7 @@ header {
 
 .content .row .box-2 {
 	display: grid;
-	align-items: center;
+	/* align-items: center; */
 	
 }
 
@@ -362,6 +362,7 @@ header {
 	.content .row{
 		display: grid;
 		grid-template-columns: 1fr;
+		grid-template-rows: 136px;
 		max-width: 400px;
 		margin: 0 auto;
 	}
@@ -418,7 +419,7 @@ header {
 
 
 
-@media only screen and (min-width: 749px) and (max-width: 1199px) {
+@media only screen and (min-width: 600px) and (max-width: 1199px) {
 	
 	.content{
 		max-width: 2000px;
@@ -430,6 +431,7 @@ header {
 	.content .row{
 		display: grid;
 		grid-template-columns: 1fr;
+		grid-template-rows: 136px;
 		max-width: 400px;
 		margin: 0 auto;
 	}
@@ -741,7 +743,7 @@ header {
 
 .footer-container {
 	display: grid;
-	background-color: #3b5c6b; 
+	background-color: #3b5c6b;
 	text-align: center;
 	color: var(--clr-light);
 	padding: 2em 0;
